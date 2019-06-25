@@ -105,3 +105,12 @@ venv.bak/
 
 # Others
 .DS_Store
+
+# node.js
+#
+node_modules/
+package-lock.json
+yarn.lock
+yarn.error
+npm-debug.log
+yarn-error.log
