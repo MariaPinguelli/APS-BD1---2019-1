@@ -19,7 +19,7 @@ connection.query(sqlQry, function(error, results, fields){
     else
         res.json(results);
     connection.end();
-    console.log("Amém Jesus!");
+    console.log("Connected!");
 });
 }
 
@@ -30,12 +30,19 @@ connection.query(sqlQry, function(error, results, fields){
 
 router.get('/FLOR', (req, res) =>{
     execSQLQuery('SELECT * FROM FLOR', res);
-    console.log("Amém Papai!\n");
+    console.log("Done!\n");
 })
 
 router.get('/FLOR/:id?', (req, res) =>{
     let filter = '';
-    if(req.params.id) filter = ' WHERE ID = 10' + parseInt(req.params.id);
-    execSQLQuery('SELECT id FROM FLOR' + filter, res);
-    console.log("Hello!\n");
+    if(req.params.id) filter = ' WHERE id =' + parseInt(req.params.id);
+    execSQLQuery('SELECT * FROM FLOR' + filter, res);
+    console.log("Selected!\n");
+})
+
+router.delete('/FLOR/DELETE/:id?', (req, res) => {
+    let filter = '';
+    if(req.params.id) filter = ' WHERE id =' + parseInt(req.params.id);
+    execSQLQuery('DELETE FROM FLOR' + filter, res);
+    console.log("Deleted!")
 })

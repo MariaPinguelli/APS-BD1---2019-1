@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS  CLIENTE;
 
 CREATE TABLE FLOR(
     id INTEGER AUTO_INCREMENT NOT NULL,
-    nome VARCHAR (100),     /* margaridas, rosas, orquídsas etc */
+    nome VARCHAR (100),     /* margaridas, rosas, orquídeas etc */
     corFlor VARCHAR (100),
     qtdeEstoque INTEGER,
     precoUnit FLOAT,
