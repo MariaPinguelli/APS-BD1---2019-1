@@ -1,13 +1,13 @@
+DROP TABLE IF EXISTS  PEDIDO;
 DROP TABLE IF EXISTS  FLOR;
 DROP TABLE IF EXISTS  CLIENTE;
-DROP TABLE IF EXISTS  PEDIDO;
 
 CREATE TABLE FLOR(
     id INTEGER AUTO_INCREMENT NOT NULL,
-    nome VARCHAR,     /* margaridas, rosas, orquídsas etc */
+    nome VARCHAR (100),     /* margaridas, rosas, orquídsas etc */
     corFlor VARCHAR (100),
     qtdeEstoque INTEGER,
-    precoUnit VALUE,
+    precoUnit FLOAT,
     PRIMARY KEY (id)
 );
 
