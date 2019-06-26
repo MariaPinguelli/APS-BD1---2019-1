@@ -1,0 +1,15 @@
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (1, "Eduarda Martins");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (2, "Maria Fernanda Pinguelli Sodré");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (3, "Alice");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (4, "Miguel");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (5, "Sophia");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (6, "Arthur");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (7, "Helena");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (8, "Bernardo");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (9, "Valentina");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (10, "Heitor");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (11, "Laura");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (12, "Davi");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (13, "Isabella");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (14, "Lorenzo");
+INSERT INTO CLIENTE(nroCliente, nomeCliente) VALUES (15, "Théo");
