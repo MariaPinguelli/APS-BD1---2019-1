@@ -86,6 +86,15 @@ router.put('/',(req, res)=>{
     })
 })
 
-
+router.delete('/:id?',(req, res)=>{
+    let filter = '';
+    if (req.params.id) filter = ' WHERE id =' + parseInt(req.params.id);
+    con.query('DELETE FROM CLIENTE' + filter, (err, rows, fields) => {
+        if (!err)
+            res.send(rows);
+        else
+            console.log(err);
+    })
+})
 
 module.exports = router;
