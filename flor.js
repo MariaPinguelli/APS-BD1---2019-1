@@ -11,7 +11,11 @@ router.post('/',(req, res)=>{
     flor.qtdeEstoque = qtdeEstoque;
     flor.precoUnit = precoUnit;
 
-    const strFlor = 'INSERT INTO FLOR (nome, corFlor, qtdeEstoque, precoUnit) VALUES (' + flor.nome + ', "' + flor.corFlor + ', "' + flor.qtdeEstoque +  ')';
+    console.log(req.body);
+
+    const strFlor = 'INSERT INTO FLOR (nome, corFlor, qtdeEstoque, precoUnit) VALUES ("' + flor.nome + '", "' + flor.corFlor + '", ' + parseInt(flor.qtdeEstoque) + ',' + parseFloat(flor.precoUnit) +')';
+
+    console.log(strFlor);
 
     con.query(strFlor, (err, rows, fields) => {
         if (!err)
