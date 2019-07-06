@@ -13,4 +13,6 @@ app.use('/', router);
 const cliente = require('./cliente');
 app.use('/cliente', cliente);
 const flor = require('./flor');
-app.use('/FLOR', flor);
+app.use('/flor', flor);
+const pedido = require('./pedido');
+app.use('/pedido', pedido);

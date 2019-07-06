@@ -86,6 +86,7 @@ router.put('/',(req, res)=>{
     })
 })
 
+//Deleta cliente pelo id
 router.delete('/:id?',(req, res)=>{
     let filter = '';
     if (req.params.id) filter = ' WHERE id =' + parseInt(req.params.id);
